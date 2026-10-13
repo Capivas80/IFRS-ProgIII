@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda de contatos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📅 Agenda de contatos</h1>
+
+  <!-- 1. Formulário de Novo Contato -->
+  <section class="formulario">
+    <h2 id="form-titulo">Novo Contato</h2>
+    <form id="form-contato">
+      <input type="hidden" id="contato-id">
+      
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="text" id="telefone" placeholder="Telefone" required>
+      <input type="email" id="email" placeholder="E-mail (opcional)">
+      <input type="text" id="cidade" placeholder="Cidade" required>
+      
+      <div class="grupo-botoes">
+        <button type="submit">Salvar</button>
+        <button type="button" id="btn-cancelar" style="display: none;">Cancelar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- 2. Lista e Filtros Unificados -->
+  <section class="lista">
+    <div class="cabecalho-lista">
+      <h2>Contatos cadastrados</h2>
+      
+      <!-- Filtros agora vivem dentro do quadro da lista -->
+      <div class="area-filtros">
+        <input type="text" id="filtro-nome" placeholder="Buscar por Nome">
+        <input type="text" id="filtro-cidade" placeholder="Buscar por Cidade">
+        <button id="btn-buscar">Buscar</button>
+        <button id="btn-limpar">Limpar</button>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>E-mail</th>
+          <th>Cidade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-corpo"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

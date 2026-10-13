@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9fafb;
+}
+ 
+h1 { color: #1A3A5C; }
+ 
+section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+ 
+input, button {
+  padding: 8px;
+  margin: 4px 4px 4px 0;
+}
+
+input[type="text"], input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filtros-group {
+    display: flex;
+    gap: 10px;
+}
+
+.filtros-group input {
+    flex: 1;
+}
+
+button {
+  padding: 10px;
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+ 
+th { background-color: #DBEAFE; }
+
+.cabecalho-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.area-filtros {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.area-filtros input[type="text"] {
+  flex: 1; 
+  margin: 0; 
+  height: 15px;
+  max-width: none; 
+}
+
+.area-filtros button {
+  margin: 0;
+  height: 36px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
